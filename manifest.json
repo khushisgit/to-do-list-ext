@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "EXPOSUREEE'S To Do List",
+  "version": "1.0",
+  "description": "A simple to-do list extension with checkboxes and auto-removal of completed tasks.",
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
